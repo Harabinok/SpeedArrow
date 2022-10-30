@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager playerManager { get { return singletone; } }
     #endregion
 
+    [SerializeField] private UnityEvent _onDia;
     private Player player;
 
 
@@ -24,7 +26,10 @@ public class PlayerManager : MonoBehaviour
     {
         player.RightMove();
     }
-
+    public void PlayerDia()
+    {
+        _onDia?.Invoke();
+    }
     public void findPlayer(Player _player)
     {
         player = _player;
