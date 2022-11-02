@@ -9,13 +9,28 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed;
 
     private bool dia = false;
+    private bool cheats = false;
 
     [Header("Visual")]
     [SerializeField] private GameObject playerSprite;
+
+    public SpriteRenderer GetSprite()
+    {
+        return playerSprite.GetComponent<SpriteRenderer>();
+    }
+    private void Awake()
+    {
+        
+    }
+    private void Start()
+    {
+        findPlayerManager();
+    }
     private void Update()
     {
-        if (dia) return;
-        findPlayerManager();
+       if(Debug.isDebugBuild)
+        if (Input.GetKeyDown(KeyCode.C)) cheats = !cheats;
+        if (dia && !cheats) return;
         Movement();
     }
 
@@ -36,6 +51,12 @@ public class Player : MonoBehaviour
     }
     public void PlayerDia()
     {
+        if (cheats) 
+        {
+            if (currentMove == CurrentMove.Left) currentMove = CurrentMove.Right;
+            else currentMove = CurrentMove.Left;
+            return; 
+        }
         dia = true;
         PlayerManager.playerManager.PlayerDia();
     }
@@ -46,6 +67,10 @@ public class Player : MonoBehaviour
     public void RightMove()
     {
         currentMove = CurrentMove.Right;
+    }
+    public void NewSpeed(float _speed)
+    {
+        speed = _speed;
     }
 
     private void findPlayerManager()

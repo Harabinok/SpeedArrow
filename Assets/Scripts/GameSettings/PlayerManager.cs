@@ -18,6 +18,10 @@ public class PlayerManager : MonoBehaviour
     {
         singletone = this;
     }
+    public void NewSpeed(float speed)
+    {
+        player.NewSpeed(speed);
+    }
     public void LeftMove()
     {
         player.LeftMove();
