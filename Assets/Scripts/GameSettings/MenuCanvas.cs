@@ -12,12 +12,15 @@ public class MenuCanvas : MonoBehaviour
     [SerializeField] private Button start;
     [SerializeField] private Button next;
     [SerializeField] private Button back;
+
+    [SerializeField] private Text money;
     private void Awake()
     {
         for (int i = 0; i < Levels.Length; i++)
         {
             if (Levels[i].gameObject.activeSelf == true) sceanIndex = i;
         }
+        money.text = $"{PlayerPrefs.GetInt("money")}";
     }
     public void StartLevel()
     {

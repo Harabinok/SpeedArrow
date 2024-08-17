@@ -55,6 +55,12 @@ public class GameManager : MonoBehaviour
 
 
     }
+    public void AddCoin()
+    {
+        var coin = PlayerPrefs.GetInt("money");
+        PlayerPrefs.SetInt("money",coin + 1);
+        print($"Вы имеете {PlayerPrefs.GetInt("money")} монет");
+    }
     public void ColorsChange(int _index)
     {
         colorChange.SelectColors(_index);
