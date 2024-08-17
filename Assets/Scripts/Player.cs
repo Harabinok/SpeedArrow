@@ -51,14 +51,18 @@ public class Player : MonoBehaviour
     }
     public void PlayerDia()
     {
-        if (cheats) 
+        if (cheats)
         {
-            if (currentMove == CurrentMove.Left) currentMove = CurrentMove.Right;
-            else currentMove = CurrentMove.Left;
-            return; 
+            MirrorMove();
+            return;
         }
         dia = true;
         PlayerManager.playerManager.PlayerDia();
+    }
+    public void MirrorMove()
+    {
+        if (currentMove == CurrentMove.Left) currentMove = CurrentMove.Right;
+        else currentMove = CurrentMove.Left;
     }
     public void LeftMove()
     {
