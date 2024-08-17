@@ -28,8 +28,13 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-       if(Debug.isDebugBuild)
-        if (Input.GetKeyDown(KeyCode.C)) cheats = !cheats;
+        if (Debug.isDebugBuild)
+        {
+            if (Input.GetKeyDown(KeyCode.C)) cheats = !cheats;
+            if (Input.GetKeyDown(KeyCode.D)) RightMove();
+            if (Input.GetKeyDown(KeyCode.A)) LeftMove();
+        }
+        
         if (dia && !cheats) return;
         Movement();
     }
