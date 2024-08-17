@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -12,12 +13,14 @@ public class GameManager : MonoBehaviour
     public static GameManager gameManger { get { return singleton; } }
     #endregion
 
+    public static int deathCount = 0;
     [Header("Events")]
     [SerializeField] private UnityEvent changeColor;
 
     [Header("UI")]
 
     [SerializeField] private Slider progress;
+    [SerializeField] private TextMeshPro deathCountText;
 
     [Header("GameObjects")]
     [SerializeField] private Transform finish;
@@ -33,7 +36,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         singleton = this;
-
         player = FindObjectsOfType<Player>();
         camera = FindObjectsOfType<Camera>();
         wall = FindObjectsOfType<Wall>();
@@ -46,14 +48,23 @@ public class GameManager : MonoBehaviour
         var distance = Vector2.Distance(finish.position, playerY.transform.position);
         progress.maxValue = distance;
     }
-
+    private void Start()
+    {
+    }
     private void Update()
     {
         playerY.transform.position = new Vector2(playerY.transform.position.x, player[0].transform.position.y);
         var distance = Vector2.Distance(finish.position, playerY.transform.position);
         progress.value = progress.maxValue - distance;
 
-
+    }
+    private void OnEnable()
+    {
+        deathCountText.text = $"{deathCount}";
+    }
+    public void AddDeadCount()
+    {
+        deathCount++;
     }
     public void AddCoin()
     {

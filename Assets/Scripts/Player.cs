@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
             return;
         }
         dia = true;
+        GameManager.gameManger.AddDeadCount();
         PlayerManager.playerManager.PlayerDia();
     }
     public void MirrorMove(int indexMove)
