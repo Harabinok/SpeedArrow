@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private enum CurrentMove { Right, Left}
+    private enum CurrentMove { Right, RightDown, LeftDown, Left}
     [SerializeField] CurrentMove currentMove;
     [SerializeField] private float speed;
 
@@ -37,10 +37,29 @@ public class Player : MonoBehaviour
     private void Movement()
     {
         int x = 1;
-        if (currentMove == CurrentMove.Right) x *= 1;
-        else x *= -1;
+        int y = 1;
+        switch (currentMove)
+        {
+            case CurrentMove.Right:
+                y *= 1;
+                x *= 1;
+                break;
+            case CurrentMove.Left:
+                y *= 1;
+                x *= -1;
+                break;
+            case CurrentMove.RightDown:
+                y *= -1;
+                x *= 1;
+                break;
+            case CurrentMove.LeftDown:
+                y *= -1;
+                x *= -1;
+                break;
+        }
+
         rotation();
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        transform.Translate(Vector2.up *y * speed * Time.deltaTime);
         transform.Translate(Vector2.right * x * speed * Time.deltaTime);
 
     }
@@ -66,11 +85,17 @@ public class Player : MonoBehaviour
     }
     public void LeftMove()
     {
-        currentMove = CurrentMove.Left;
+        int rot = ((int)currentMove);
+        if (rot == 0) rot = System.Enum.GetValues(typeof(CurrentMove)).Length - 1;
+        else rot--;
+        currentMove = (CurrentMove)rot;
     }
     public void RightMove()
     {
-        currentMove = CurrentMove.Right;
+        int rot = ((int)currentMove);
+        if (rot == System.Enum.GetValues(typeof(CurrentMove)).Length - 1) rot = 0;
+        else rot++;
+        currentMove = (CurrentMove)rot;
     }
     public void NewSpeed(float _speed)
     {
@@ -83,11 +108,12 @@ public class Player : MonoBehaviour
     }
 
     private void OnDrawGizmos()
-    {
+    {/*
         if (dia) return;
         int x = 1;
         if (currentMove == CurrentMove.Right) x *= 1;
         else x *= -1;
         rotation();
+        */
     }
 }
