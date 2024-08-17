@@ -48,45 +48,45 @@ public class Player : MonoBehaviour
             case CurrentMove.Right:
                 y *= 1;
                 x *= 1;
+                rotation(45);
                 break;
             case CurrentMove.Left:
                 y *= 1;
                 x *= -1;
+                rotation(135);
                 break;
             case CurrentMove.RightDown:
                 y *= -1;
                 x *= 1;
+                rotation(315);
                 break;
             case CurrentMove.LeftDown:
                 y *= -1;
                 x *= -1;
+                rotation(225);
                 break;
         }
 
-        rotation();
         transform.Translate(Vector2.up *y * speed * Time.deltaTime);
         transform.Translate(Vector2.right * x * speed * Time.deltaTime);
 
     }
-    private void rotation()
+    private void rotation(int z)
     {
-        if (currentMove == CurrentMove.Right) playerSprite.transform.rotation = Quaternion.Euler(0, 0, 45);
-        else playerSprite.transform.rotation = Quaternion.Euler(0, 0, 135);
+        playerSprite.transform.rotation = Quaternion.Euler(0, 0, z);
     }
     public void PlayerDia()
     {
         if (cheats)
         {
-            MirrorMove();
             return;
         }
         dia = true;
         PlayerManager.playerManager.PlayerDia();
     }
-    public void MirrorMove()
+    public void MirrorMove(int indexMove)
     {
-        if (currentMove == CurrentMove.Left) currentMove = CurrentMove.Right;
-        else currentMove = CurrentMove.Left;
+        currentMove = (CurrentMove)indexMove;
     }
     public void LeftMove()
     {
