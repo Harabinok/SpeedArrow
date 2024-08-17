@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Camera[] camera;
     [SerializeField] public Wall[] wall;
 
+    [Header("Game Rules")]
+    [SerializeField] private bool GameMirror = false;
+
     private GameObject playerY;
     private ColorChange colorChange;
     private void Awake()
@@ -47,11 +51,23 @@ public class GameManager : MonoBehaviour
     {
         playerY.transform.position = new Vector2(playerY.transform.position.x, player[0].transform.position.y);
         var distance = Vector2.Distance(finish.position, playerY.transform.position);
-        progress.value = progress.maxValue - distance; 
+        progress.value = progress.maxValue - distance;
+
+
     }
     public void ColorsChange(int _index)
     {
         colorChange.SelectColors(_index);
         changeColor?.Invoke();
+    }
+    public void MirrorGameSet()
+    {
+        GameMirror = !GameMirror;
+        MirrorGame();
+    }
+    private void MirrorGame()
+    {
+        ButtonScreen.buttonScreen.RotationComponent.NewRotationOn180();
+        CameraMenu.cameraMenu.GetCameraVC().GetComponent<RotationComponent>().NewRotationOn180();
     }
 }
