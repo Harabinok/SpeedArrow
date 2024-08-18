@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     #endregion
 
     [SerializeField] private UnityEvent _onDia;
+    [SerializeField] private UnityEvent _onFinish;
     private Player player;
 
 
@@ -29,6 +30,10 @@ public class PlayerManager : MonoBehaviour
     public void RightMove()
     {
         player.RightMove();
+    }
+    public void Finish()
+    {
+        _onFinish?.Invoke();
     }
     public void PlayerDia()
     {

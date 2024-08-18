@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         player = FindObjectsOfType<Player>();
         camera = FindObjectsOfType<Camera>();
         wall = FindObjectsOfType<Wall>();
+        finish = FindObjectOfType<TriggerFinishComponent>().transform;
         colorChange = GetComponentInChildren<ColorChange>();
 
         playerY = new GameObject();
