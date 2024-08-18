@@ -34,6 +34,10 @@ public class PlayerManager : MonoBehaviour
     {
         _onDia?.Invoke();
     }
+    public void Finish()
+    {
+
+    }
     public void findPlayer(Player _player)
     {
         player = _player;
