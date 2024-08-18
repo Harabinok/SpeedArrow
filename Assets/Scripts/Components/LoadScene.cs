@@ -6,14 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     [SerializeField] private int _loadScene;
-    [SerializeField] private string _name;
 
     public void LoadSceneNumber()
-    {
-        SceneManager.LoadScene(_loadScene);
-    }
-
-    public void LoadSceneName()
     {
         SceneManager.LoadScene(_loadScene);
     }
