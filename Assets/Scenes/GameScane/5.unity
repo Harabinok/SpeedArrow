@@ -253,12 +253,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6418710607461924223, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06890677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418710607461924223, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06890677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418710607461924223, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06890677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418710607461924223, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4.04
+      value: 3.929
       objectReference: {fileID: 0}
     - target: {fileID: 6418710607461924223, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.88
+      value: -0.933
       objectReference: {fileID: 0}
     - target: {fileID: 6529644712381315137, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
       propertyPath: colors.Array.size
