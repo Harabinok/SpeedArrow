@@ -5,11 +5,23 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private enum CurrentMove { Right, RightDown, LeftDown, Left}
-    [SerializeField] CurrentMove currentMove;
-    [SerializeField] private float speed;
+    private enum GameMode { Arrow, Ball}
+    [SerializeField] private CurrentMove currentMove;
+    [SerializeField] private GameMode gameMode;
+    
+
+    [Header("Arrow")]
+    [SerializeField] private float speedArrow;
+
+    [Header("Ball")]
+    [SerializeField] private float speedBall;
+    [SerializeField] private float jumpImpuls;
+
 
     private bool dia = false;
     private bool cheats = false;
+
+    private Rigidbody2D rd2d;
 
     [Header("Visual")]
     [SerializeField] private GameObject playerSprite;
@@ -20,7 +32,8 @@ public class Player : MonoBehaviour
     }
     private void Awake()
     {
-        
+        if (rd2d == null) { rd2d = GetComponent<Rigidbody2D>(); }
+
     }
     private void Start()
     {
@@ -35,11 +48,22 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A)) LeftMove();
         }
         
-        if (dia && !cheats) return;
-        Movement();
+        if (!dia &&  gameMode == GameMode.Arrow)
+        {
+            MovementArrow();
+        }
+        
+    }
+    private void FixedUpdate()
+    {
+        if (!dia && gameMode == GameMode.Ball)
+        {
+
+            MovementBall();
+        }
     }
 
-    private void Movement()
+    private void MovementArrow()
     {
         int x = 1;
         int y = 1;
@@ -48,30 +72,34 @@ public class Player : MonoBehaviour
             case CurrentMove.Right:
                 y *= 1;
                 x *= 1;
-                rotation(45);
+                rotationArrow(45);
                 break;
             case CurrentMove.Left:
                 y *= 1;
                 x *= -1;
-                rotation(135);
+                rotationArrow(135);
                 break;
             case CurrentMove.RightDown:
                 y *= -1;
                 x *= 1;
-                rotation(315);
+                rotationArrow(315);
                 break;
             case CurrentMove.LeftDown:
                 y *= -1;
                 x *= -1;
-                rotation(225);
+                rotationArrow(225);
                 break;
         }
 
-        transform.Translate(Vector2.up *y * speed * Time.deltaTime);
-        transform.Translate(Vector2.right * x * speed * Time.deltaTime);
+        transform.Translate(Vector2.up *y * speedArrow * Time.deltaTime);
+        transform.Translate(Vector2.right * x * speedArrow * Time.deltaTime);
 
     }
-    private void rotation(int z)
+    private void MovementBall()
+    {
+        rd2d.velocity = new Vector2(speedBall, rd2d.velocity.y);
+    }
+    private void rotationArrow(int z)
     {
         playerSprite.transform.rotation = Quaternion.Euler(0, 0, z);
     }
@@ -89,6 +117,10 @@ public class Player : MonoBehaviour
     {
         currentMove = (CurrentMove)indexMove;
     }
+    public void JumpBall()
+    {
+        rd2d.AddForce(Vector2.up * jumpImpuls,ForceMode2D.Impulse);
+    }
     public void LeftMove()
     {
         int rot = ((int)currentMove);
@@ -105,7 +137,25 @@ public class Player : MonoBehaviour
     }
     public void NewSpeed(float _speed)
     {
-        speed = _speed;
+        speedArrow = _speed;
+        speedBall = _speed;
+    }
+
+    public void Switch()
+    {
+        ButtonScreen.buttonScreen.Switch();
+        if (gameMode == GameMode.Arrow)
+        {
+            rd2d.bodyType = RigidbodyType2D.Dynamic;
+            gameMode = GameMode.Ball;
+            return;
+        }
+        if (gameMode == GameMode.Ball)
+        {
+            rd2d.bodyType = RigidbodyType2D.Kinematic;
+            gameMode = GameMode.Arrow;
+            return;
+        }
     }
 
     private void findPlayerManager()

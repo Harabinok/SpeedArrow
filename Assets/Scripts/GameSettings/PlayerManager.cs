@@ -35,6 +35,10 @@ public class PlayerManager : MonoBehaviour
     {
         _onFinish?.Invoke();
     }
+    public void Jump()
+    {
+        player.JumpBall();
+    }
     public void PlayerDia()
     {
         _onDia?.Invoke();
