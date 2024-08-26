@@ -2462,6 +2462,10 @@ PrefabInstance:
       value: -1.65
       objectReference: {fileID: 0}
     - target: {fileID: 7712973389904688212, guid: 33f604d777542fb4d83a6a52b69f8fee, type: 3}
+      propertyPath: speedArrow
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712973389904688212, guid: 33f604d777542fb4d83a6a52b69f8fee, type: 3}
       propertyPath: currentMove
       value: 1
       objectReference: {fileID: 0}
