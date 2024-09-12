@@ -314,6 +314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trigger(Teleport)
       objectReference: {fileID: 0}
+    - target: {fileID: 2979247109701264402, guid: 6ec1a62037e1e98488df674eb08888d5, type: 3}
+      propertyPath: startDelay.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5232115754160635940, guid: 6ec1a62037e1e98488df674eb08888d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.29
