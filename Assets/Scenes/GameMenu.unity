@@ -346,6 +346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3039865202556880707, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e771be23c7873734f808dbb77aeccf49, type: 3}
     - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: money
       value: 
@@ -501,6 +505,18 @@ PrefabInstance:
     - target: {fileID: 5355306332606497342, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514990045642569885, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6395073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514990045642569885, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6395073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514990045642569885, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6395073
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
