@@ -658,6 +658,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.27256346
       objectReference: {fileID: 0}
+    - target: {fileID: 3349864932632745309, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349864932632745309, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349864932632745309, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 5289699047102157001, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
       propertyPath: finish
       value: 
