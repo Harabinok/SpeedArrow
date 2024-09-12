@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -349,6 +350,50 @@ PrefabInstance:
       propertyPath: money
       value: 
       objectReference: {fileID: 3021978663378533790}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[5]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[6]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[7]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[8]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664856401387221569, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: scenes.Array.data[9]
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5147129444602228275, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_Text
       value: 0

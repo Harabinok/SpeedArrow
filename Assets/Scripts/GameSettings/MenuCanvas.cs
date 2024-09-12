@@ -7,6 +7,7 @@ public class MenuCanvas : MonoBehaviour
 {
     [SerializeField] private int sceanIndex;
     [SerializeField] private GameObject[] Levels;
+    [SerializeField] private List<string> scenes;
 
     [Header("UI")]
     [SerializeField] private Button start;
@@ -24,7 +25,7 @@ public class MenuCanvas : MonoBehaviour
     }
     public void StartLevel()
     {
-        SceneManager.LoadScene(sceanIndex);
+        SceneManager.LoadScene(scenes.ToArray()[sceanIndex]);
     }
     public void NextLevel()
     {

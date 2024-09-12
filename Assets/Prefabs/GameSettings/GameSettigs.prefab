@@ -114,11 +114,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2279061602691240788, guid: 41115f9163b88dd4f8b157bd5c9af60d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.555547
+      value: 5.5818815
       objectReference: {fileID: 0}
     - target: {fileID: 2279061602691240788, guid: 41115f9163b88dd4f8b157bd5c9af60d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.5345
+      value: -3.0425632
       objectReference: {fileID: 0}
     - target: {fileID: 3715445316749105250, guid: 41115f9163b88dd4f8b157bd5c9af60d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -647,10 +647,6 @@ PrefabInstance:
       propertyPath: progress
       value: 
       objectReference: {fileID: 7283704248788478470}
-    - target: {fileID: 4131896659627604276, guid: eb467cf0cec367941a3c8e7dcb4da64b, type: 3}
-      propertyPath: deathCountText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8492106188348354206, guid: eb467cf0cec367941a3c8e7dcb4da64b, type: 3}
       propertyPath: m_Name
       value: GameManager

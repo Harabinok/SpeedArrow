@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8540175393162165702}
   - component: {fileID: 1454046721697741741}
   m_Layer: 0
-  m_Name: TriggerSwitchGamePlay
+  m_Name: Trigger(SwitchGamePlay)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
