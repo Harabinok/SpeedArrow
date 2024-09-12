@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4153560041212223094}
   - component: {fileID: 3515881051284998753}
+  - component: {fileID: 7951316968186227530}
   - component: {fileID: 3793946043797348511}
   - component: {fileID: 4251067599362280393}
   - component: {fileID: 7125779048644575313}
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.7, y: 8.43, z: -2.221748}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 0.05968046, y: 0.05968046, z: 0.05968046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.9245283, g: 0.8183157, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e771be23c7873734f808dbb77aeccf49, type: 3}
+  m_Color: {r: 0.99737024, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,6 +89,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7951316968186227530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596786479709803829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8e8f71a05276b41a12cf0e45e26b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idMoney: 
 --- !u!114 &3793946043797348511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +133,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3793946043797348511}
         m_TargetAssemblyTypeName: CoinTriggerComponent, Assembly-CSharp
         m_MethodName: AddCoin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7951316968186227530}
+        m_TargetAssemblyTypeName: CoinConmponent, Assembly-CSharp
+        m_MethodName: SaveMoney
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -187,4 +213,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.11
+  m_Radius: 3.1

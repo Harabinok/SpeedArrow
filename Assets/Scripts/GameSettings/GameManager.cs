@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Player[] player;
     [SerializeField] public Camera[] camera;
     [SerializeField] public Wall[] wall;
+    [SerializeField] public CoinConmponent[] coins;
 
     [Header("Game Rules")]
     [SerializeField] private bool GameMirror = false;
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         player = FindObjectsOfType<Player>();
         camera = FindObjectsOfType<Camera>();
         wall = FindObjectsOfType<Wall>();
+        coins = FindObjectsOfType<CoinConmponent>();
         finish = FindObjectOfType<TriggerFinishComponent>().transform;
         colorChange = GetComponentInChildren<ColorChange>();
 
@@ -51,6 +53,10 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        for (int i = 0; i < coins.Length; i++)
+        {
+            coins[i].LoadCoin();
+        }
     }
     private void Update()
     {
