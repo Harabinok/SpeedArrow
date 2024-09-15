@@ -105,13 +105,14 @@ public class Player : MonoBehaviour
     }
     public void PlayerDia()
     {
-        if (cheats)
+        if (cheats && dia)
         {
             return;
         }
         dia = true;
         GameManager.gameManger.AddDeadCount();
         PlayerManager.playerManager.PlayerDia();
+        
     }
     public void MirrorMove(int indexMove)
     {
