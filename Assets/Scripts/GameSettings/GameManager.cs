@@ -69,9 +69,12 @@ public class GameManager : MonoBehaviour
     {
         deathCountText.text = $"{deathCount}";
     }
+    bool addDeadCount = false;
     public void AddDeadCount()
     {
-        deathCount++;
+        if (addDeadCount) return; addDeadCount = true;
+       var d = deathCount+= 1;
+        print(d);
     }
     public void AddCoin()
     {
