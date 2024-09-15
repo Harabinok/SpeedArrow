@@ -426,6 +426,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Zigzag
       objectReference: {fileID: 0}
+    - target: {fileID: 4756966569592284730, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: m_Text
+      value: Warp
+      objectReference: {fileID: 0}
     - target: {fileID: 5147129444602228275, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_Text
       value: 0
@@ -569,6 +573,10 @@ PrefabInstance:
     - target: {fileID: 7349550633815866387, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579535417174418499, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
+      propertyPath: m_Text
+      value: Process
       objectReference: {fileID: 0}
     - target: {fileID: 7771222002382922103, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_Text
