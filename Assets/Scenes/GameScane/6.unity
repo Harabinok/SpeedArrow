@@ -1977,6 +1977,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSettigs
       objectReference: {fileID: 0}
+    - target: {fileID: 8624671891911222080, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8624671891911222080, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e41da80315201854fa6850e8384cdeb6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

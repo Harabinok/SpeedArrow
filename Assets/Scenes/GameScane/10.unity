@@ -279,6 +279,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.00000020574
       objectReference: {fileID: 0}
+    - target: {fileID: 8624671891911222080, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8624671891911222080, guid: a83c3c5dd75851246b0936304f88f6e0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2cc4044ec954219488c93c9bbcbb4514, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
