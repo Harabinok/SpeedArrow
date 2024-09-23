@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 100622366}
   - component: {fileID: 100622368}
   - component: {fileID: 100622367}
+  - component: {fileID: 100622369}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -5021,6 +5022,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &100622369
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100622365}
+  m_CullTransparentMesh: 1
 --- !u!1001 &387292701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5201,6 +5210,7 @@ GameObject:
   - component: {fileID: 841610313}
   - component: {fileID: 841610315}
   - component: {fileID: 841610314}
+  - component: {fileID: 841610316}
   m_Layer: 0
   m_Name: Particle System (2)
   m_TagString: Untagged
@@ -10020,6 +10030,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &841610316
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841610312}
+  m_CullTransparentMesh: 1
 --- !u!1 &975649355
 GameObject:
   m_ObjectHideFlags: 0
@@ -10031,6 +10049,7 @@ GameObject:
   - component: {fileID: 975649356}
   - component: {fileID: 975649358}
   - component: {fileID: 975649357}
+  - component: {fileID: 975649359}
   m_Layer: 0
   m_Name: Particle System (7)
   m_TagString: Untagged
@@ -14850,6 +14869,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &975649359
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975649355}
+  m_CullTransparentMesh: 1
 --- !u!224 &983462704 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8786624098469813928, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
@@ -14871,6 +14898,7 @@ GameObject:
   - component: {fileID: 1081319504}
   - component: {fileID: 1081319506}
   - component: {fileID: 1081319505}
+  - component: {fileID: 1081319507}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -19690,6 +19718,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &1081319507
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081319503}
+  m_CullTransparentMesh: 1
 --- !u!224 &1103665880 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5596485266676403979, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
@@ -19711,6 +19747,7 @@ GameObject:
   - component: {fileID: 1186235945}
   - component: {fileID: 1186235947}
   - component: {fileID: 1186235946}
+  - component: {fileID: 1186235948}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -24530,6 +24567,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &1186235948
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186235944}
+  m_CullTransparentMesh: 1
 --- !u!1 &1384435112
 GameObject:
   m_ObjectHideFlags: 0
@@ -24541,6 +24586,7 @@ GameObject:
   - component: {fileID: 1384435113}
   - component: {fileID: 1384435115}
   - component: {fileID: 1384435114}
+  - component: {fileID: 1384435116}
   m_Layer: 0
   m_Name: Particle System (5)
   m_TagString: Untagged
@@ -29360,6 +29406,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &1384435116
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384435112}
+  m_CullTransparentMesh: 1
 --- !u!224 &1439595669 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2996705494166030487, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
@@ -29376,6 +29430,7 @@ GameObject:
   - component: {fileID: 1498219313}
   - component: {fileID: 1498219315}
   - component: {fileID: 1498219314}
+  - component: {fileID: 1498219316}
   m_Layer: 0
   m_Name: Particle System (3)
   m_TagString: Untagged
@@ -34195,6 +34250,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &1498219316
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498219312}
+  m_CullTransparentMesh: 1
 --- !u!1 &1511180002
 GameObject:
   m_ObjectHideFlags: 0
@@ -34237,6 +34300,7 @@ GameObject:
   - component: {fileID: 1522241359}
   - component: {fileID: 1522241361}
   - component: {fileID: 1522241360}
+  - component: {fileID: 1522241362}
   m_Layer: 0
   m_Name: Particle System (4)
   m_TagString: Untagged
@@ -39056,6 +39120,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &1522241362
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522241358}
+  m_CullTransparentMesh: 1
 --- !u!1 &1569022333
 GameObject:
   m_ObjectHideFlags: 0
@@ -39098,6 +39170,7 @@ GameObject:
   - component: {fileID: 1695397706}
   - component: {fileID: 1695397708}
   - component: {fileID: 1695397707}
+  - component: {fileID: 1695397709}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -43917,6 +43990,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &1695397709
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695397705}
+  m_CullTransparentMesh: 1
 --- !u!224 &1719573107 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4650200076030798631, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
@@ -43938,6 +44019,7 @@ GameObject:
   - component: {fileID: 2022863795}
   - component: {fileID: 2022863797}
   - component: {fileID: 2022863796}
+  - component: {fileID: 2022863798}
   m_Layer: 0
   m_Name: Particle System (6)
   m_TagString: Untagged
@@ -48757,6 +48839,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!222 &2022863798
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022863794}
+  m_CullTransparentMesh: 1
 --- !u!1001 &3021978663378533789
 PrefabInstance:
   m_ObjectHideFlags: 0
