@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 838792219}
   - component: {fileID: 838792220}
   m_Layer: 0
-  m_Name: Picsart_24-09-17_13-37-29-757
+  m_Name: RUBU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,15 +649,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663573795688959346, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.12858537
+      value: 0.109264135
       objectReference: {fileID: 0}
     - target: {fileID: 5663573795688959346, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.12858537
+      value: 0.109264135
       objectReference: {fileID: 0}
     - target: {fileID: 5663573795688959346, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.12858537
+      value: 0.109264135
       objectReference: {fileID: 0}
     - target: {fileID: 5663573795688959346, guid: ccce106d077c4df4d8abfd4efc7c958e, type: 3}
       propertyPath: m_AnchoredPosition.x
