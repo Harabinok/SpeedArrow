@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public static int deathCount = 0;
-  //  [SerializeField] private InterstitialAdManager ad;
+    //  [SerializeField] private InterstitialAdManager ad;
+    [SerializeField] private InterstitialAdManager interstitialAdManager;
 
     [Header("Events")]
     [SerializeField] private UnityEvent changeColor;
@@ -76,7 +77,7 @@ public class GameManager : MonoBehaviour
     {
         if (addDeadCount) return; addDeadCount = true;
        var d = deathCount+= 1;
-       // ad.ShowInterstitial();
+       interstitialAdManager.ShowInterstitial();
         print(d);
     }
     public void AddCoin()
