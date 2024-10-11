@@ -105,7 +105,8 @@ public class Player : MonoBehaviour
     }
     public void PlayerDia()
     {
-        if (cheats && dia)
+        //GameManager.gameManger.yandexMobileAdsInterstitial.ShowInterstitial();
+        if (cheats)
         {
             return;
         }

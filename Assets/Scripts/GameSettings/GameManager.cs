@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public static int deathCount = 0;
+    [SerializeField] public YandexMobileAdsInterstitial yandexMobileAdsInterstitial;
     [Header("Events")]
     [SerializeField] private UnityEvent changeColor;
 
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
         coins = FindObjectsOfType<CoinConmponent>();
         finish = FindObjectOfType<TriggerFinishComponent>().transform;
         colorChange = GetComponentInChildren<ColorChange>();
+        yandexMobileAdsInterstitial.RequestInterstitial();
 
         playerY = new GameObject();
         playerY.transform.position = finish.transform.position;
@@ -73,6 +75,10 @@ public class GameManager : MonoBehaviour
     public void AddDeadCount()
     {
         if (addDeadCount) return; addDeadCount = true;
+        if(deathCount == 5)
+        {
+            yandexMobileAdsInterstitial.ShowInterstitial();
+        }
        var d = deathCount+= 1;
         print(d);
     }
